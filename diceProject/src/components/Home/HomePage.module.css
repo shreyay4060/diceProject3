@@ -1,0 +1,40 @@
+
+.home{
+    display: flex;
+    justify-content: space-between;
+    height: 90vh;
+    border-bottom: 1px solid black;
+    /* position: fixed; */
+    margin: 60px 20px;
+}
+
+
+.button{
+    padding: 10px 70px;
+    display: flex;
+    justify-content: end;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+    background-color: rgb(49, 47, 47);
+    color: white;
+}
+.button:active{
+    background-color: white;
+    color: black;
+}
+img{
+    cursor: pointer;
+}
+
+
+.home h1{
+    font-size: 60px;
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
