@@ -17,6 +17,7 @@ export default function GamePage(props) {
         } else {
             setScore((prev)=>prev - 1);
         }
+        setValue(undefined)
     }
 
     function clicked(newValue) {
@@ -57,7 +58,7 @@ export default function GamePage(props) {
             <div className="dicee">
                 
                 <div className="dice">
-                    <div className="img"  onClick={changeNum}>
+                    <div className="img"  onClick={value ?changeNum: null}>
                         <img height="150px" src={`/images/dice${dice}.png`} alt={`Dice ${dice}`} />
                     </div><br />
                     <h3>Click on dice to roll</h3><br />
